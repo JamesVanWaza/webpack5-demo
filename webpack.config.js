@@ -50,13 +50,13 @@
 //                 ]
 //             },
 
-//             // Start here for the URL Loader
-//             {
-//                 test: /\.(png|jpg)$/,
-//                 use: [
-//                     { loader: 'url-loader' }
-//                 ]
-//             }
+// Start here for the URL Loader
+// {
+//     test: /\.(png|jpg)$/,
+//     use: [
+//         { loader: 'url-loader' }
+//     ]
+// }
 //         ]
 //     }
 // }
@@ -65,25 +65,43 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack"); // to access built-in plugins
 
-
 module.exports = {
     mode: 'development',
-    // entry: {
-    //     index: './src/index.ejs',
-    //     algolia: './src/algolia.ejs',
-    //     firebase: './src/firebase.ejs'
-    // },
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        algolia: './src/algolia.js',
+        firebase: './src/firebase.js'
+    },
     output: {
-        // filename: "[name].bundle.js",
-        filename: 'main.js',
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "public")
     },
     module: {
         rules: [{
-            test: /\.txt$/,
-            use: 'raw-loader'
-        }]
+                test: /\.txt$/,
+                use: 'raw-loader'
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS Strings
+                    { loader: 'style-loader' },
+
+                    // Translates CSS into CommonJS
+                    { loader: 'css-loader' },
+
+                    // Compiles Sass to CSS
+                    { loader: 'sass-loader' }
+                ]
+            },
+            // Start here for the URL Loader
+            {
+                test: /\.(png|jpg)$/,
+                use: [
+                    { loader: 'url-loader' }
+                ]
+            }
+        ]
     },
     plugins: [
         // Generates default index.html
@@ -106,6 +124,6 @@ module.exports = {
         //     filename: 'firebase.html',
         //     template: './src/firebase.ejs'
         // })
-        new HtmlWebpackPlugin({ template: './src/index.html' })
+        new HtmlWebpackPlugin({ template: './src/index-template.html' })
     ]
 };
