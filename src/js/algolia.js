@@ -1,5 +1,5 @@
 /** Stylesheet **/
-import './scss/style.scss';
+import '../scss/style.scss';
 
 /** Algolia CSS **/
 //import algoliamincss from 'instantsearch.css';

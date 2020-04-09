@@ -1,5 +1,5 @@
 /** Stylesheet **/
-import './scss/style.css';
+import '../scss/style.scss';
 
 /** HTML in JS **/
 //document.write("<h1>Webpack Demo Tutorials</h1>");
