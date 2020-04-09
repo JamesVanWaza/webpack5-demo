@@ -5,13 +5,13 @@ const webpack = require("webpack"); // to access built-in plugins
 module.exports = {
     mode: 'development',
     entry: {
-        index: './js/index.js',
-        algolia: './js/algolia.js',
-        firebase: './js/firebase.js'
+        index: './src/js/index.js',
+        algolia: './src/js/algolia.js',
+        firebase: './src/js/firebase.js'
     },
     output: {
+        path: path.resolve(__dirname, "public"),
         filename: "[name].js",
-        path: path.resolve(__dirname, "public")
     },
     module: {
         rules: [{
@@ -45,19 +45,19 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Algolia',
             filename: 'algolia.html',
-            template: './html-templates/algolia-template.html'
+            template: './src/html-templates/algolia-template.html'
         }),
         // Firebase Page
         new HtmlWebpackPlugin({
             title: 'Firebase',
             filename: 'firebase.html',
-            template: './html-templates/firebase-template.html'
+            template: './src/html-templates/firebase-template.html'
         }),
         // Home Page
         new HtmlWebpackPlugin({
             title: 'Webpack Tutorials',
             filename: 'index.html',
-            template: './html-templates/index-template.html'
+            template: './src/html-templates/index-template.html'
         })
     ]
 };
