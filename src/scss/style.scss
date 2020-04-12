@@ -1,5 +1,17 @@
+/** Algolia */
+
 @import 'algolia';
+
+/** Google Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Inria+Serif|Quicksand&display=swap');
+
+/** Font Awesome */
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 body {
     font-family: 'Inria Serif', serif;
 }
@@ -41,4 +53,21 @@ h6 {
     background: url("../images/unsplash-tomato@0.1x.jpg");
     height: 600px;
     width: 400px;
+}
+
+
+/** Navigation TopBar **/
+
+nav a {
+    color: green;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    color: white;
 }
