@@ -37,6 +37,14 @@ module.exports = {
                 use: [
                     { loader: 'url-loader' }
                 ]
+            },
+            {
+                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
+                use: 'url-loader?limit=10000',
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+                use: 'file-loader',
             }
         ]
     },
