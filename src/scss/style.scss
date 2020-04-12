@@ -1,10 +1,17 @@
-/** Algolia */
+/** SCSS Imports */
 
 @import 'algolia';
+@import 'web-fonts';
 
 /** Google Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Inria+Serif|Quicksand&display=swap');
+@include google-font {
+    @include google-font(Quicksand,
+    700);
+    @include google-font(Inria Serif); // <= not used just to show it works 
+}
+
 
 /** Font Awesome */
 
@@ -12,6 +19,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
+
+/** SCSS Starts Here */
+
 body {
     font-family: 'Inria Serif', serif;
 }
