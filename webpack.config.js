@@ -4,11 +4,7 @@ const webpack = require("webpack"); // to access built-in plugins
 
 module.exports = {
     mode: 'development',
-    entry: {
-        index: './src/js/index.js',
-        algolia: './src/js/algolia.js',
-        firebase: './src/js/firebase.js'
-    },
+    entry: '.src/js/index.js',
     output: {
         path: path.resolve(__dirname, "public"),
         filename: "[name].js",
@@ -49,21 +45,9 @@ module.exports = {
         ]
     },
     plugins: [
-        // Algolia Page
-        new HtmlWebpackPlugin({
-            title: 'Algolia',
-            filename: 'algolia.html',
-            template: './src/html-templates/algolia-template.html'
-        }),
-        // Firebase Page
-        new HtmlWebpackPlugin({
-            title: 'Firebase',
-            filename: 'firebase.html',
-            template: './src/html-templates/firebase-template.html'
-        }),
         // Home Page
         new HtmlWebpackPlugin({
-            title: 'Webpack Tutorials',
+            title: 'Responsive Navbar Tutorial',
             filename: 'index.html',
             template: './src/html-templates/index-template.html'
         })
