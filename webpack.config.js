@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpack = require("webpack"); // to access built-in plugins
 
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+
 module.exports = {
     //	https://webpack.js.org/configuration/mode/
     mode: 'development',
