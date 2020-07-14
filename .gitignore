@@ -13,3 +13,12 @@ public/ee26f57bc9e3619b022b2c0ea0fc4660.woff
 public/index.js
 public/algolia.js
 public/firebase.js
+.DS_Store
+public/
+database.rules.json
+firebase.json
+storage.rules
+firestore.indexes.json
+firestore.rules
+functions/.eslintrc.json
+functions/index.js

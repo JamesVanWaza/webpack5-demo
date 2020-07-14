@@ -5,11 +5,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack"); // to access built-in plugins
 
 module.exports = {
+    //	https://webpack.js.org/configuration/mode/
     mode: 'development',
-    entry: './src/js/index.js',
+    entry: {
+        index: './src/js/index.js',
+        algolia: './src/js/algolia.js',
+        firebase: './src/js/firebase.js'
+    },
     output: {
-        path: path.resolve(__dirname, "public"),
-        filename: "[name].js",
+        filename: "[name].bundle.js",
+        //filename: "main.js",
+        //		path: path.resolve(__dirname, "public") Can change directory name
+        path: path.resolve(__dirname, "public")
     },
     module: {
         rules: [{
@@ -52,6 +59,18 @@ module.exports = {
             title: 'Responsive Navbar Tutorial',
             filename: 'index.html',
             template: './src/html-templates/index-template.html'
+        }),
+        // Algolia Page
+        new HtmlWebpackPlugin({
+            title: 'Algolia Tutorial',
+            filename: 'algolia.html',
+            template: './src/html-templates/algolia-template.html'
+        }),
+        // Firebase Page
+        new HtmlWebpackPlugin({
+            title: 'Firebase Tutorial',
+            filename: 'firebase.html',
+            template: './src/html-templates/firebase-template.html'
         })
     ]
 };

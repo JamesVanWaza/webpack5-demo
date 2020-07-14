@@ -4,7 +4,6 @@ import '../scss/style.scss';
 /** Algolia JS **/
 import algoliasearch from 'algoliasearch/lite';
 import instantsearch from 'instantsearch.js';
-
 import {
     searchBox,
     hits
