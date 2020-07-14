@@ -71,6 +71,10 @@ module.exports = {
             title: 'Firebase Tutorial',
             filename: 'firebase.html',
             template: './src/html-templates/firebase-template.html'
+        }),
+        // Favicon
+        new FaviconsWebpackPlugin({
+            logo: './src/images/W-Favicon002@4x.png'
         })
     ]
 };
