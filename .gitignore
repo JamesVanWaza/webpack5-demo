@@ -22,3 +22,5 @@ firestore.indexes.json
 firestore.rules
 functions/.eslintrc.json
 functions/index.js
+.firebase/hosting.cHVibGlj.cache
+.firebaserc
