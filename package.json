@@ -1,11 +1,11 @@
 {
     "name": "webpack5-demo",
-    "version": "2.5.1",
+    "version": "2.5.2",
     "description": "Webpack Learning",
     "main": "index.html, main.js",
     "scripts": {
         "build": "webpack -w",
-        "start:dev": "webpack-dev-server"
+        "start": "webpack-dev-server"
     },
     "license": "MIT",
     "author": "JamesVanWaza <info@dosbranding.com>",
