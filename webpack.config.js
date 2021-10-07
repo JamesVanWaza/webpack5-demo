@@ -20,6 +20,15 @@ module.exports = {
         //		path: path.resolve(__dirname, "public") Can change directory name
         path: path.resolve(__dirname, "public")
     },
+    devServer: {
+        open: {
+            app: 'Google Chrome'
+        },
+        watchFiles: {
+            paths: ['src/']
+        },
+        port: 2011
+    },
     module: {
         rules: [{
                 test: /\.txt$/,
