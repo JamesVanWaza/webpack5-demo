@@ -16,7 +16,6 @@ public/firebase.js
 .DS_Store
 public/
 database.rules.json
-firebase.json
 storage.rules
 firestore.indexes.json
 firestore.rules
