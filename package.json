@@ -16,7 +16,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "algoliasearch": "^4.10.5",
     "babel-loader": "^8.2.2",
-    "css-loader": "^6.3.0",
+    "css-loader": "^6.4.0",
     "favicons-webpack-plugin": "^5.0.2",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
