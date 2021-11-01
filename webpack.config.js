@@ -6,6 +6,8 @@ const webpack = require("webpack"); // to access built-in plugins
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
+const TerserPlugin = require('terser-webpack-plugin');
+
 module.exports = {
     //	https://webpack.js.org/configuration/mode/
     mode: 'development',
@@ -87,5 +89,9 @@ module.exports = {
         new FaviconsWebpackPlugin({
             logo: './src/images/W-Favicon002@4x.png'
         })
-    ]
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()]
+    }
 };
