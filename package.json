@@ -1,6 +1,6 @@
 {
     "name": "webpack5-demo",
-    "version": "2.5.7",
+    "version": "2.5.9",
     "description": "Webpack Learning",
     "main": "index.html, main.js",
     "scripts": {
@@ -11,7 +11,7 @@
     "author": "JamesVanWaza <info@dosbranding.com>",
     "devDependencies": {
         "@babel/core": "^7.16.0",
-        "@babel/preset-env": "^7.16.0",
+        "@babel/preset-env": "^7.16.4",
         "@babel/preset-react": "^7.16.0",
         "@fortawesome/fontawesome-free": "^5.15.4",
         "algoliasearch": "^4.11.0",
@@ -22,7 +22,7 @@
         "html-loader": "^3.0.1",
         "html-webpack-plugin": "^5.5.0",
         "instantsearch.css": "^7.4.5",
-        "instantsearch.js": "^4.33.1",
+        "instantsearch.js": "^4.33.2",
         "jquery": "^3.6.0",
         "node-sass": "^6.0.1",
         "raw-loader": "^4.0.2",
@@ -33,7 +33,7 @@
         "webpack-dev-server": "^4.5.0"
     },
     "dependencies": {
-        "webpack": "^5.64.0",
+        "webpack": "^5.64.2",
         "webpack-cli": "^4.9.1"
     },
     "repository": {
