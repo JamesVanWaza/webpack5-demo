@@ -1,50 +1,32 @@
 {
     "name": "webpack5-demo",
-    "version": "2.6.0",
-    "description": "Webpack Learning",
-    "main": "index.html, main.js",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
     "scripts": {
-        "build": "webpack -w",
-        "start": "webpack-dev-server"
-    },
-    "license": "MIT",
-    "author": "JamesVanWaza <info@dosbranding.com>",
-    "devDependencies": {
-        "@babel/core": "^7.16.0",
-        "@babel/preset-env": "^7.16.4",
-        "@babel/preset-react": "^7.16.0",
-        "@fortawesome/fontawesome-free": "^5.15.4",
-        "algoliasearch": "^4.11.0",
-        "babel-loader": "^8.2.3",
-        "css-loader": "^6.5.1",
-        "favicons-webpack-plugin": "^5.0.2",
-        "file-loader": "^6.2.0",
-        "html-loader": "^3.0.1",
-        "html-webpack-plugin": "^5.5.0",
-        "instantsearch.css": "^7.4.5",
-        "instantsearch.js": "^4.33.2",
-        "jquery": "^3.6.0",
-        "node-sass": "^6.0.1",
-        "raw-loader": "^4.0.2",
-        "sass-loader": "^12.3.0",
-        "style-loader": "^3.3.1",
-        "terser-webpack-plugin": "^5.2.5",
-        "url-loader": "^4.1.1",
-        "webpack-dev-server": "^4.5.0"
-    },
-    "dependencies": {
-        "webpack": "^5.64.3",
-        "webpack-cli": "^4.9.1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "NODE_ENV=production webpack --watch",
+        "start": "webpack serve"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/JamesVanWaza/webpack5--demo.git"
+        "url": "git+https://github.com/JamesVanWaza/webpack5-demo.git"
     },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "bugs": {
         "url": "https://github.com/JamesVanWaza/webpack5-demo/issues"
     },
     "homepage": "https://github.com/JamesVanWaza/webpack5-demo#readme",
-    "keywords": [
-        "Webpack 5 Tutorial Demo"
-    ]
+    "devDependencies": {
+        "webpack": "^5.64.4",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^4.5.0"
+    },
+    "dependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.4",
+        "babel-loader": "^8.2.3"
+    }
 }
