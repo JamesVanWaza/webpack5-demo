@@ -14,15 +14,28 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/JamesVanWaza/webpack5-demo/issues"
     },
     "homepage": "https://github.com/JamesVanWaza/webpack5-demo#readme",
     "devDependencies": {
+        "css-loader": "^6.5.1",
+        "file-loader": "^6.2.0",
+        "html-loader": "^3.0.1",
+        "html-webpack-plugin": "^5.5.0",
+        "node-sass": "^6.0.1",
+        "postcss": "^8.4.3",
+        "postcss-loader": "^6.2.1",
+        "postcss-preset-env": "^7.0.1",
+        "raw-loader": "^4.0.2",
+        "sass-loader": "^12.3.0",
+        "style-loader": "^3.3.1",
+        "tailwindcss": "^2.2.19",
+        "url-loader": "^4.1.1",
         "webpack": "^5.64.4",
         "webpack-cli": "^4.9.1",
-        "webpack-dev-server": "^4.5.0"
+        "webpack-dev-server": "^4.6.0"
     },
     "dependencies": {
         "@babel/core": "^7.16.0",
