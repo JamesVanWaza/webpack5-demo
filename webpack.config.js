@@ -11,7 +11,9 @@ module.exports = {
 
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'public'),
+        // For the images to be loaded in the browser
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
 
     plugins: [
@@ -55,7 +57,11 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 use: [
                     { loader: 'url-loader' }
-                ]
+                ],
+            },
+            {
+                test: /\.png|jpeg/,
+                type: 'asset/resource'
             },
             {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
@@ -64,6 +70,7 @@ module.exports = {
             {
                 test: /\.(ttf|eot|svg|png|jpg|jpeg)(\?[\s\S]+)?$/,
                 use: 'file-loader',
+                type: 'asset/resource'
             }
         ]
     },
@@ -80,5 +87,9 @@ module.exports = {
             paths: ['public/']
         },
         port: 2014
+    },
+
+    performance: {
+        hints: false,
     }
 };

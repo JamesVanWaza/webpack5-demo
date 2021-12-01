@@ -10,3 +10,4 @@ functions/index.js
 .firebase/hosting.cHVibGlj.cache
 .firebaserc
 firebase-debug.log
+*.icloud

@@ -21,5 +21,5 @@ import '../scss/style.scss';
 const headline = "Welcome to the webpage";
 document.querySelector('h1').innerText = headline;
 
-/** Tailwind CSS **/
-import 'tailwindcss/tailwind.css';
+// import mainImg from '../images/trees.jpeg';
+// img.src = mainImg;
