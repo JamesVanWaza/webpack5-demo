@@ -1,38 +1,38 @@
-const path = require("path");
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
-const webpack = require("webpack"); // to access built-in plugins
-
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
-const TerserPlugin = require('terser-webpack-plugin');
+const mode = process.env.NODE_ENV || 'production' ? 'production' :
+    'development';
 
 module.exports = {
-    //	https://webpack.js.org/configuration/mode/
-    mode: 'development',
-    entry: {
-        index: './src/js/index.js',
-        algolia: './src/js/algolia.js',
-        firebase: './src/js/firebase.js'
-    },
+    mode: mode,
+
+    entry: './src/js/index.js',
+
     output: {
-        filename: "[name].bundle.js",
-        //filename: "main.js",
-        //		path: path.resolve(__dirname, "public") Can change directory name
-        path: path.resolve(__dirname, "public")
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public'),
+        // For the images to be loaded in the browser
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
-    devServer: {
-        open: {
-            app: 'Google Chrome'
-        },
-        watchFiles: {
-            paths: ['src/']
-        },
-        port: 2011
-    },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/html-templates/index-template.html'
+        }),
+    ],
+
     module: {
         rules: [{
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    // without additional configuration, babel-loader will use the .babelrc file
+                    loader: "babel-loader"
+                }
+            },
+            {
                 test: /\.txt$/,
                 use: 'raw-loader'
             },
@@ -45,8 +45,11 @@ module.exports = {
                     // Translates CSS into CommonJS
                     { loader: 'css-loader' },
 
+                    // PostCSS
+                    { loader: 'postcss-loader' },
+
                     // Compiles Sass to CSS
-                    { loader: 'sass-loader' }
+                    { loader: 'sass-loader' },
                 ]
             },
             // Start here for the URL Loader
@@ -54,7 +57,11 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 use: [
                     { loader: 'url-loader' }
-                ]
+                ],
+            },
+            {
+                test: /\.png|jpeg/,
+                type: 'asset/resource'
             },
             {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
@@ -63,35 +70,26 @@ module.exports = {
             {
                 test: /\.(ttf|eot|svg|png|jpg|jpeg)(\?[\s\S]+)?$/,
                 use: 'file-loader',
+                type: 'asset/resource'
             }
         ]
     },
-    plugins: [
-        // Home Page
-        new HtmlWebpackPlugin({
-            title: 'Responsive Navbar Tutorial',
-            filename: 'index.html',
-            template: './src/html-templates/index-template.html'
-        }),
-        // Algolia Page
-        new HtmlWebpackPlugin({
-            title: 'Algolia Tutorial',
-            filename: 'algolia.html',
-            template: './src/html-templates/algolia-template.html'
-        }),
-        // Firebase Page
-        new HtmlWebpackPlugin({
-            title: 'Firebase Tutorial',
-            filename: 'firebase.html',
-            template: './src/html-templates/firebase-template.html'
-        }),
-        // Favicon
-        new FaviconsWebpackPlugin({
-            logo: './src/images/W-Favicon002@4x.png'
-        })
-    ],
-    optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin()]
+
+    devtool: 'source-map',
+
+    target: 'web',
+
+    devServer: {
+        open: {
+            app: 'Google Chrome'
+        },
+        watchFiles: {
+            paths: ['public/']
+        },
+        port: 2014
+    },
+
+    performance: {
+        hints: false,
     }
 };

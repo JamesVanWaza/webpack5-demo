@@ -6,11 +6,12 @@
     "functions": {
         "predeploy": [
             "npm --prefix \"$RESOURCE_DIR\" run lint"
-        ]
+        ],
+        "source": "functions"
     },
     "hosting": {
+        "target": "webpack5demo",
         "public": "public",
-        "site": "webpack-5-demo",
         "ignore": [
             "firebase.json",
             "**/.*",
@@ -35,6 +36,15 @@
         },
         "ui": {
             "enabled": true
+        },
+        "auth": {
+            "port": 9099
+        },
+        "storage": {
+            "port": 9199
         }
+    },
+    "remoteconfig": {
+        "template": "remoteconfig.template.json"
     }
 }
