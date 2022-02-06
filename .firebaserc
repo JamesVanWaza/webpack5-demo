@@ -5,8 +5,8 @@
     "targets": {
         "startbootstrap-dostesting": {
             "hosting": {
-                "webpack5demo": [
-                    "webpack-5-demo"
+                "webpack-5-demo": [
+                    "webpack5-demo"
                 ]
             }
         }
