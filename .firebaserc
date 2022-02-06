@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "startbootstrap-dostesting"
+  },
+  "targets": {
+    "startbootstrap-dostesting": {
+      "hosting": {
+        "webpack5demo": [
+          "webpack-5-demo"
+        ]
+      }
+    }
+  }
+}
