@@ -10,7 +10,7 @@
         "source": "functions"
     },
     "hosting": {
-        "target": "webpack-5-demo",
+        "target": "webpack5-site",
         "public": "public",
         "ignore": [
             "firebase.json",
