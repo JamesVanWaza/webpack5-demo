@@ -1,6 +1,6 @@
 {
     "name": "webpack5-demo",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Setting up Webpack 5",
     "main": "index.js",
     "scripts": {
@@ -27,18 +27,18 @@
         "node-sass": "^7.0.1",
         "postcss": "^8.4.6",
         "postcss-loader": "^6.2.1",
-        "postcss-preset-env": "^7.4.0",
+        "postcss-preset-env": "^7.4.1",
         "raw-loader": "^4.0.2",
         "sass-loader": "^12.6.0",
         "style-loader": "^3.3.1",
         "tailwindcss": "^3.0.23",
         "url-loader": "^4.1.1",
-        "webpack": "^5.69.0",
+        "webpack": "^5.69.1",
         "webpack-cli": "^4.9.2",
         "webpack-dev-server": "^4.7.4"
     },
     "dependencies": {
-        "@babel/core": "^7.17.4",
+        "@babel/core": "^7.17.5",
         "@babel/preset-env": "^7.16.11",
         "babel-loader": "^8.2.3",
         "@fortawesome/fontawesome-free": "^6.0.0"
