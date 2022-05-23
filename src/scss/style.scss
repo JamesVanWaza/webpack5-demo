@@ -1,7 +1,18 @@
 @import '~tailwindcss/base';
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
+@import 'web-fonts';
 @import 'colors';
+
+/** Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif|Quicksand&display=swap');
+@include google-font {
+    @include google-font(Quicksand,
+    700);
+    @include google-font(Inria Serif);
+}
+
 html,
 body {
     height: 100%;
