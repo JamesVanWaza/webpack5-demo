@@ -2,6 +2,35 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 @import 'colors';
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inria Serif', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Inria Serif', serif;
+}
+
+.container {
+    flex: 1 0 auto;
+    margin: 1em;
+    border-radius: 10px;
+    border: 2px solid $blueviolet;
+    padding: 1px;
+}
+
 
 /** Basic Styling */
 

@@ -42,9 +42,9 @@ function footer() {
 
     // gets the copyright symbol
     const favicon = document.createElement("i");
-    favicon.classList.add("fa-regular", "fa-copyright");
+    favicon.classList.add("fas", "fa-copyright");
 
-    const text = document.createTextNode("2020 " + "- " + copyright);
+    const text = document.createTextNode(" 2020 " + "- " + copyright);
 
     // add the text node to the newly created div
     footerDiv.appendChild(favicon);
