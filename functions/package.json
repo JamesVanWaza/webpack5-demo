@@ -1,6 +1,7 @@
 {
     "name": "webpack5-demo-functions",
     "description": "Cloud Functions for Firebase",
+    "version": "1.0.3",
     "scripts": {
         "lint": "eslint",
         "serve": "firebase emulators:start --only functions",
@@ -10,19 +11,18 @@
         "logs": "firebase functions:log"
     },
     "engines": {
-        "node": "17"
+        "node": "18"
     },
     "dependencies": {
-        "firebase-admin": "^10.0.2",
-        "firebase-functions": "^3.16.0"
+        "firebase-admin": "^11.4.1",
+        "firebase-functions": "^4.1.1"
     },
     "devDependencies": {
-        "eslint": "^8.8.0",
-        "eslint-plugin-promise": "^6.0.0",
-        "firebase-functions-test": "^0.3.3"
+        "eslint": "^8.32.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "firebase-functions-test": "^3.0.0"
     },
     "private": true,
-    "version": "1.0.2",
     "main": "index.js",
     "author": "JamesVanWaza <info@dosbranding.com>",
     "license": "MIT"

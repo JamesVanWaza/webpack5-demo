@@ -1,6 +1,6 @@
 {
     "name": "webpack5-demo",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Setting up Webpack 5",
     "main": "index.js",
     "scripts": {
@@ -20,26 +20,25 @@
     },
     "homepage": "https://github.com/JamesVanWaza/webpack5-demo#readme",
     "devDependencies": {
-        "css-loader": "^6.5.1",
+        "css-loader": "^6.7.3",
         "file-loader": "^6.2.0",
-        "html-loader": "^3.1.0",
+        "html-loader": "^4.2.0",
         "html-webpack-plugin": "^5.5.0",
-        "node-sass": "^7.0.1",
-        "postcss": "^8.4.5",
-        "postcss-loader": "^6.2.1",
-        "postcss-preset-env": "^7.3.0",
+        "node-sass": "^8.0.0",
+        "postcss": "^8.4.21",
+        "postcss-loader": "^7.0.2",
+        "postcss-preset-env": "^7.8.3",
         "raw-loader": "^4.0.2",
-        "sass-loader": "^12.4.0",
+        "sass-loader": "^13.2.0",
         "style-loader": "^3.3.1",
-        "tailwindcss": "^3.0.18",
         "url-loader": "^4.1.1",
-        "webpack": "^5.68.0",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.7.3"
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.11.1"
     },
     "dependencies": {
-        "@babel/core": "^7.16.12",
-        "@babel/preset-env": "^7.16.11",
-        "babel-loader": "^8.2.3"
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "babel-loader": "^9.1.2"
     }
 }
