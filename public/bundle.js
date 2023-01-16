@@ -742,7 +742,7 @@ module.exports = __webpack_require__.p + "images/26e40b49f073fa929cb4.woff2";
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			"index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -774,30 +774,10 @@ var __webpack_exports__ = {};
   \*************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
-// import getClasses from './getClasses';
-
-// console.log('ran from index.js');
-// getClasses();
-
-// const obj = {
-//     a: 'alpha',
-//     b: 'bravo',
-// };
-
-// const newObj = {
-//     ...obj,
-//     c: 'charlie'
-// };
-
-// console.log(newObj);
-
 /** Stylesheet **/
 
 var headline = "Welcome to the webpage";
 document.querySelector('h1').innerText = headline;
-
-// import mainImg from '../images/trees.jpeg';
-// img.src = mainImg;
 })();
 
 /******/ })()
