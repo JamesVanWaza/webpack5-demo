@@ -8,6 +8,5 @@ firestore.rules
 functions/.eslintrc.json
 functions/index.js
 .firebase/hosting.cHVibGlj.cache
-.firebaserc
 firebase-debug.log
 *.icloud

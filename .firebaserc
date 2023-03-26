@@ -1,0 +1,15 @@
+{
+    "projects": {
+        "default": "startbootstrap-dostesting"
+    },
+    "targets": {
+        "startbootstrap-dostesting": {
+            "hosting": {
+                "webpack": [
+                    "webpack-5-demo"
+                ]
+            }
+        }
+    },
+    "etags": {}
+}
