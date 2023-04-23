@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -20,6 +22,8 @@ module.exports = {
             filename: 'index.html',
             template: './src/html-templates/index-template.html'
         }),
+
+        new FaviconsWebpackPlugin('../images/W5-Favicon-Color@4x.png')
     ],
 
     module: {
