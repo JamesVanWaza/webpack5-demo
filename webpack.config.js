@@ -32,10 +32,6 @@ module.exports = {
                 }
             },
             {
-                test: /\.txt$/,
-                use: 'raw-loader'
-            },
-            {
                 test: /\.s[ac]ss$/i,
                 use: [
                     // Creates `style` nodes from JS Strings
@@ -51,26 +47,10 @@ module.exports = {
                     { loader: 'sass-loader' },
                 ]
             },
-            // Start here for the URL Loader
-            {
-                test: /\.(png|jpg)$/,
-                use: [
-                    { loader: 'url-loader' }
-                ],
-            },
             {
                 test: /\.png|jpeg/,
                 type: 'asset/resource'
             },
-            {
-                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
-                use: 'url-loader?limit=10000',
-            },
-            {
-                test: /\.(ttf|eot|svg|png|jpg|jpeg)(\?[\s\S]+)?$/,
-                use: 'file-loader',
-                type: 'asset/resource'
-            }
         ]
     },
 
@@ -83,7 +63,7 @@ module.exports = {
             app: 'Google Chrome'
         },
         watchFiles: {
-            paths: ['public/']
+            paths: ['src/']
         },
         port: 2014
     },
