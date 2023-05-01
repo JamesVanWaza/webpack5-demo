@@ -23,6 +23,16 @@ module.exports = {
             template: './src/html-templates/index-template.html'
         }),
 
+        new HtmlWebpackPlugin({
+            filename: 'signin.html',
+            template: './src/html-templates/signin-template.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'signup.html',
+            template: './src/html-templates/signup-template.html'
+        }),
+
         new FaviconsWebpackPlugin('./src/images/W5-Favicon-Color@4x.png')
     ],
 
