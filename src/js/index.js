@@ -2,15 +2,19 @@ import '../scss/style.scss';
 
 /** Testing Icons Upload */
 import Icon from '../images/Webpack5-Color@4x.png';
+import Icon2 from '../images/W5-Favicon-Color.svg';
 
 function imageUpload() {
     const element = document.createElement('div');
 
     // Add the image to our existing div.
     const myIcon = new Image();
+    const myIcon2 = new Image();
     myIcon.src = Icon;
+    myIcon2.src = Icon2;
 
     element.appendChild(myIcon);
+    element.appendChild(myIcon2);
 
     return element;
 }
