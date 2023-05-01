@@ -559,17 +559,7 @@ module.exports = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3
   \*******************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "images/ff9aef53ea10557dc05a.ttf";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf ***!
-  \******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/e1e86dbd899d128493e2.ttf";
+module.exports = __webpack_require__.p + "images/150de8eaa454d669c405.ttf";
 
 /***/ }),
 
@@ -579,7 +569,17 @@ module.exports = __webpack_require__.p + "images/e1e86dbd899d128493e2.ttf";
   \*********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "images/488ac57ae8f33da3014a.woff2";
+module.exports = __webpack_require__.p + "images/e033a13ee751afc1860c.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf ***!
+  \******************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/4a2cd718d7031b732e76.ttf";
 
 /***/ }),
 
@@ -589,7 +589,7 @@ module.exports = __webpack_require__.p + "images/488ac57ae8f33da3014a.woff2";
   \********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "images/b8393cb9037444f455ac.woff2";
+module.exports = __webpack_require__.p + "images/bb975c966c37455a1bc3.woff2";
 
 /***/ })
 

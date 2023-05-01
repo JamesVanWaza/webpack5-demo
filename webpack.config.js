@@ -23,7 +23,7 @@ module.exports = {
             template: './src/html-templates/index-template.html'
         }),
 
-        new FaviconsWebpackPlugin('../images/W5-Favicon-Color@4x.png')
+        new FaviconsWebpackPlugin('./src/images/W5-Favicon-Color@4x.png')
     ],
 
     module: {
