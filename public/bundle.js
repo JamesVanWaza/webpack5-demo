@@ -593,6 +593,16 @@ module.exports = __webpack_require__.p + "assets/resource/bb975c966c37455a1bc3.w
 
 /***/ }),
 
+/***/ "./src/images/W5-Favicon-Color.svg":
+/*!*****************************************!*\
+  !*** ./src/images/W5-Favicon-Color.svg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/resource/bb34245f8daa19cd107f.svg";
+
+/***/ }),
+
 /***/ "./src/images/Webpack5-Color@4x.png":
 /*!******************************************!*\
   !*** ./src/images/Webpack5-Color@4x.png ***!
@@ -749,6 +759,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
 /* harmony import */ var _images_Webpack5_Color_4x_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/Webpack5-Color@4x.png */ "./src/images/Webpack5-Color@4x.png");
+/* harmony import */ var _images_W5_Favicon_Color_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/W5-Favicon-Color.svg */ "./src/images/W5-Favicon-Color.svg");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
@@ -756,13 +767,17 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 /** Testing Icons Upload */
 
+
 function imageUpload() {
   var element = document.createElement('div');
 
   // Add the image to our existing div.
   var myIcon = new Image();
+  var myIcon2 = new Image();
   myIcon.src = _images_Webpack5_Color_4x_png__WEBPACK_IMPORTED_MODULE_1__;
+  myIcon2.src = _images_W5_Favicon_Color_svg__WEBPACK_IMPORTED_MODULE_2__;
   element.appendChild(myIcon);
+  element.appendChild(myIcon2);
   return element;
 }
 document.body.appendChild(imageUpload());
