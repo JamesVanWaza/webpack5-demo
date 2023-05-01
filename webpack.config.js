@@ -14,7 +14,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
         // For the images to be loaded in the browser
-        assetModuleFilename: 'images/[hash][ext][query]'
+        assetModuleFilename: 'assets/resource/[hash][ext][query]'
     },
 
     plugins: [

@@ -1,5 +1,22 @@
 import '../scss/style.scss';
 
+/** Testing Icons Upload */
+import Icon from '../images/Webpack5-Color@4x.png';
+
+function imageUpload() {
+    const element = document.createElement('div');
+
+    // Add the image to our existing div.
+    const myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
+
+    return element;
+}
+
+document.body.appendChild(imageUpload());
+
 /** Navigation Menu */
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
