@@ -24,7 +24,7 @@
         "favicons-webpack-plugin": "6.0.0",
         "html-webpack-plugin": "^5.5.3",
         "node-sass": "^9.0.0",
-        "postcss": "^8.4.24",
+        "postcss": "^8.4.26",
         "postcss-loader": "^7.3.3",
         "postcss-preset-env": "^8.5.1",
         "sass-loader": "^13.3.2",
