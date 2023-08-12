@@ -38,37 +38,34 @@ module.exports = {
 
     module: {
         rules: [{
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    // without additional configuration, babel-loader will use the .babelrc file
-                    loader: "babel-loader"
-                }
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    // Creates `style` nodes from JS Strings
-                    { loader: 'style-loader' },
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                // without additional configuration, babel-loader will use the .babelrc file
+                loader: "babel-loader"
+            }
+        },
+        {
+            test: /\.s[ac]ss$/i,
+            use: [
+                // Creates `style` nodes from JS Strings
+                { loader: 'style-loader' },
 
-                    // Translates CSS into CommonJS
-                    { loader: 'css-loader' },
+                // Translates CSS into CommonJS
+                { loader: 'css-loader' },
 
-                    // PostCSS
-                    { loader: 'postcss-loader' },
-
-                    // Compiles Sass to CSS
-                    { loader: 'sass-loader' },
-                ]
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource'
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: 'asset/resource',
-            },
+                // Compiles Sass to CSS
+                { loader: 'sass-loader' },
+            ]
+        },
+        {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: 'asset/resource'
+        },
+        {
+            test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+        },
         ]
     },
 
